@@ -1,3 +1,7 @@
+# There is a room with a door closed with an electronic lock. This lock is opened by entering a code on a four-button keyboard. 
+# The device must have a visual indication. While the door is closed, the LED lights up. 
+# After pressing the button, the door opens and remains open for 10 seconds, all the while the LED flashes. 
+# After that, the door closes and the LED lights up continuously again.
 import machine 
 import time 
 from collections import OrderedDict 

@@ -1,3 +1,11 @@
+# Case 4
+# The system should have the following features:
+# 1. The system should receive values from the soil moisture sensor. 
+# The readings are published on the MQTT server in the topic /class/stand<id>/humidity, where <id> is the number of the case with laboratory equipment.
+# 2. Watering is performed at a low humidity level (sensor readings less than 15) and is accompanied by sending the message "watering" to the topic /class/stand<id>/pump, 
+# where <id> is the number of the case with laboratory equipment. It should be possible to start the pump forcibly (perform watering), 
+# upon receipt of the message "do" in the corresponding topic.
+# 3. The power supply to the submersible pump is carried out using a mini-relay module or a power key.
 import network
 import urequests
 from umqtt.robust import MQTTClient

@@ -29,7 +29,7 @@ mqtt_server = 'io.adafruit.com'
 client_id = "13312sdsa213aasdw"
 client = MQTTClient(client_id=client_id, server=mqtt_server,user="cupOfLungo",password="aio_vKzu0104LFgKopj8kOLTy4aa504b")
 client.connect() 
-client.set_callback(cb)
+client.set_callback(cb) # second thread 
 client.subscribe("cupOfLungo/feeds/doWatering")
 print("Connection successful")
 # client.publish("cupOfLungo/groups/HumSens/json",json.dumps({"feeds":{"temp":25,"hum":54}}))

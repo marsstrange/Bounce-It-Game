@@ -1,4 +1,4 @@
-# Transfer of humidity data to the MQTT broker
+# Transfer of humidity data to the MQTT-broker Adafruit (+ establishing a wi-fi connection on ESP32)
 import network
 import urequests
 from umqtt.robust import MQTTClient

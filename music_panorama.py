@@ -1,3 +1,4 @@
+# Two microphones, ESP32, LED. Different colors on the LED light up depending on which side the audio signal comes from (left microphone or right)
 from machine import ADC, Pin
 from machine import I2C
 import time

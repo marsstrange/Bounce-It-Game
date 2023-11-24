@@ -1,3 +1,4 @@
+# Transfer of humidity data to the MQTT broker
 import network
 import urequests
 from umqtt.robust import MQTTClient
